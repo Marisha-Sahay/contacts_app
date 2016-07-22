@@ -1,0 +1,14 @@
+<table class="table table-striped">
+  <tr>
+    <th> First name</th>
+    <th> Phone number</th>
+  </tr>
+  <%@contacts.each do |contact| %>
+  <tr>
+    <td><%=contact.first_name%></td>
+    <td><%=contact.phone%></td>
+  </tr>
+  <%end%>
+</table>
+
+ 
