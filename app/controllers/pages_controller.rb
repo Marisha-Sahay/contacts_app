@@ -15,4 +15,9 @@ def form_result
   @contacts = params[:contact]
   @phone = params[:phone_no]
 end
+
+def all_johns
+  @contacts = Contact.all
+end
+
 end

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/contacts", to: "pages#contacts"
   get "/add_form", to: "pages#add_form"
   post "form_result", to: "pages#form_result"
+  get "/all_johns", to: "pages#all_johns"
 end
