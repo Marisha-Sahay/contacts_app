@@ -1,0 +1,23 @@
+<h1> New Contact </h1>
+<%=form_tag '/contacts/new', method: :post do%>
+  <div>
+    <%= label_tag :first_name, "First name" %>
+    <%= text_field_tag :first_name %>
+  </div>
+  <div>
+    <%= label_tag :last_name, "Last name" %>
+    <%= text_field_tag :last_name %>
+  </div>
+  <div>
+<%= label_tag :phone %>
+<%= text_field_tag :phone%>
+</div>
+<div>
+<%= label_tag :age %>
+<%= text_field_tag :age %>
+</div>
+  <div>
+    <%= submit_tag "submit" %>    
+  </div>
+
+<% end %>
